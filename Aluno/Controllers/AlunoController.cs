@@ -34,6 +34,10 @@ namespace Aluno.Controllers
             }
             return PartialView(a);
         }
+        public int Soma(int valor1, int valor2)
+        {
+            return valor1 + valor2;     
+        }
         [HttpPost]
         public ActionResult Edit(aluno a)
         {
