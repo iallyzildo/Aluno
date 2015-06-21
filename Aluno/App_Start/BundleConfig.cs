@@ -9,9 +9,7 @@ namespace Aluno
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/mask").Include(
+                        "~/Scripts/jquery-{version}.js",
                         "~/Scripts/jquery.mask.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(

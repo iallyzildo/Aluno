@@ -37,7 +37,9 @@
         </p>
     </fieldset>
 }
-
+<script>
+    $("#CPF").mask('000.000.000-00');
+</script>
 <script>
    
 
@@ -54,7 +56,7 @@
             alert("CPF obrigatório!");
             return false;
         }
-        if ($("#CPF").val().length != 11) {
+        if ($("#CPF").val().length != 14) {
             alert("CPF deve possuir 11 caracteres");
             return false;
         }
