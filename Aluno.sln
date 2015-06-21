@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aluno", "Aluno\Aluno.csproj", "{DC0E96AA-E9E1-4677-879F-E4DC5F6EE533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlunoTest", "AlunoTestes\AlunoTest.csproj", "{3E693053-0786-4D79-B841-C31D9B79712A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{DC0E96AA-E9E1-4677-879F-E4DC5F6EE533}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC0E96AA-E9E1-4677-879F-E4DC5F6EE533}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC0E96AA-E9E1-4677-879F-E4DC5F6EE533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E693053-0786-4D79-B841-C31D9B79712A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E693053-0786-4D79-B841-C31D9B79712A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E693053-0786-4D79-B841-C31D9B79712A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E693053-0786-4D79-B841-C31D9B79712A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
