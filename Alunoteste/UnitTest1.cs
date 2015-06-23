@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Aluno.Controllers;
 
 namespace Alunoteste
 {
@@ -9,9 +10,11 @@ namespace Alunoteste
         [TestMethod]
         public void TestMethod1()
         {
-            int x = 0;
+            var soma = new AlunoController();
+            var retorno = soma.Soma(9, 1);
 
-            Assert.IsTrue(x==1);
+
+            Assert.AreEqual(10, retorno);
         }
     }
 }
