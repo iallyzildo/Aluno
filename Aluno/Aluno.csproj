@@ -325,12 +325,6 @@
   <ItemGroup>
     <Content Include="Views\Aluno\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Web.config.uninstall.xdt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Web.config.install.xdt" />
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
