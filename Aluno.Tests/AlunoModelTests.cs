@@ -10,12 +10,12 @@ namespace Aluno.Tests
         [TestMethod]
         public void AlunoCPFTest()
         {
-           
+            AlunoModel target = new AlunoModel();
             string digitos = "112957216";
-            string experado = "112957216";
-
-
-            Assert.AreEqual(experado, digitos);
+            string experado = "19";
+            string validacao;
+            validacao = target.calcularDigitosVerificadoresCPF(digitos);
+            Assert.AreEqual(experado, validacao);
         }
     }
 }
