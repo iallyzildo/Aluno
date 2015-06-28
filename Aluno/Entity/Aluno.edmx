@@ -4,18 +4,18 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl" Alias="Self" Namespace="AlunoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008">
+    <Schema Namespace="AlunoModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="AlunoModelStoreContainer">
-          <EntitySet Name="Aluno" EntityType="AlunoModel.Store.Aluno" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Aluno" EntityType="AlunoModel.Store.Aluno" store:Type="Tables" Schema="dbo" />
         </EntityContainer>
         <EntityType Name="Aluno">
           <Key>
             <PropertyRef Name="IdAluno" />
           </Key>
-          <Property Name="IdAluno" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="Nome" Nullable="false" MaxLength="255" Type="varchar" />
-          <Property Name="CPF" Nullable="false" MaxLength="11" Type="char" />
-          <Property Name="Matricula" Nullable="false" MaxLength="255" Type="varchar" />
+          <Property Name="IdAluno" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="CPF" Type="char" Nullable="false" MaxLength="14" />
+          <Property Name="Matricula" Type="varchar" Nullable="false" MaxLength="255" />
         </EntityType>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -30,7 +30,7 @@
           </Key>
           <Property Type="Int32" Name="IdAluno" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Nome" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Type="String" Name="CPF" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="CPF" Nullable="false" MaxLength="14" FixedLength="true" Unicode="false" />
           <Property Type="String" Name="Matricula" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>

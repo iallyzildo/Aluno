@@ -95,6 +95,57 @@ namespace Aluno.Models
             }
             return null;
         }
+        private string digitos;
+
+        public string calcularDigitosVerificadoresCPF(string digitos)
+        {
+            this.digitos = digitos;
+            int[] array = new int[digitos.Length + 1];
+            int[] peso = { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
+            int digito10;
+            int digito11;
+            int soma = 0;
+
+            for (int i = 0; i < digitos.Length; i++)
+            {
+                int digitoUnico = Int32.Parse(digitos.Substring(i, 1));
+                array[i] = digitoUnico;
+            }
+
+            for (int i = 0; i < digitos.Length; i++)
+            {
+                soma = soma + (array[i] * peso[i + 1]);
+            }
+            digito10 = soma % 11;
+
+            if (digito10 < 2)
+            {
+                digito10 = 0;
+            }
+            else
+            {
+                digito10 = 11 - digito10;
+            }
+            soma = 0;
+            array[9] = digito10;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                soma = soma + (array[i] * peso[i]);
+            }
+            digito11 = soma % 11;
+
+            if (digito11 < 2)
+            {
+                digito11 = 0;
+            }
+            else
+            {
+                digito11 = 11 - digito11;
+            }
+
+            return (digito10 + "" + digito11);
+        }
        
     }
 }
