@@ -36,7 +36,7 @@ namespace Aluno.Tests
         public void TestarDigitosVerificadoresCpf()
         {          
             string digitos = "112957216";
-            string experado = "19";
+            string experado = "11";
             string validacao;
             validacao = alunoModel.calcularDigitosVerificadoresCPF(digitos);
             Assert.AreEqual(experado, validacao);
