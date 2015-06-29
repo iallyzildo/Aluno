@@ -32,6 +32,8 @@ namespace Aluno.Tests
 
 
 
+
+
         [TestMethod]
         public void TestarDigitosVerificadoresCpf()
         {          
