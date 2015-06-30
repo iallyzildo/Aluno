@@ -36,24 +36,67 @@ namespace Aluno.Tests
         public void TestarDigitosVerificadoresCpf()
         {          
             string digitos = "112957216";
-            string experado = "19";
+            string esperado = "19";
             string validacao;
             validacao = alunoModel.calcularDigitosVerificadoresCPF(digitos);
-            Assert.AreEqual(experado, validacao);
+            Assert.AreEqual(esperado, validacao);
         }
-        //[TestMethod]
-        //public void PegarAluno1_DeverRetornarAluno1()
-        //{
-        //    var result = alunoModel.obterAluno(1);
-        //    Assert.AreEqual(alunoModel.obterAluno(1), result);
-        //}
-        //[TestMethod]
-        //public void PegarAluno_RetornarNomeCorreto()
-        //{
-        //    var result = alunoModel.obterAluno(1);
-        //    Assert.IsNotNull(result);
-        //    Assert.AreEqual(alunoModel.obterAluno(1).Nome, result.Nome);
-        //}
+        [TestMethod]
+        public void Retornar10quandoSomar9e1()
+        {
+            int esperado = 10;
+            var retorno = alunoModel.Soma(9,1);
+            Assert.AreEqual(esperado, retorno);
+        }
+        [TestMethod]
+        public void Retornar5quandoDividir10por2()
+        {
+            int esperado = 5;
+            var retorno = alunoModel.Divisao(10, 2);
+            Assert.AreEqual(esperado, retorno);
+        }
+        [TestMethod]
+        public void Retornar4quandoSubtrair10por6()
+        {
+            int esperado = 4;
+            var retorno = alunoModel.Subtração(10, 6);
+            Assert.AreEqual(esperado, retorno);
+        }
+        [TestMethod]
+        public void Retornar6quandoMultiplicar3por2()
+        {
+            int esperado = 6;
+            var retorno = alunoModel.Multiplicacao(3, 2);
+            Assert.AreEqual(esperado, retorno);
+        }
+        [TestMethod]
+        public void TestarConexaoNoBanco()
+        {
+            var result = alunoModel.obterAluno(9);
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod]
+        public void PegarAluno1DoBanco_DeverRetornarAluno1()
+        {
+            var result = alunoModel.obterAluno(1);
+            Assert.AreEqual(alunoModel.obterAluno(1), result);
+        }
+        [TestMethod]
+        public void PegarAluno2DoBanco_RetornarNomeCorretoDoAluno2()
+        {
+            var result = alunoModel.obterAluno(2);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(alunoModel.obterAluno(2).Nome, result.Nome);
+        }
+        [TestMethod]
+        public void PegarAluno2DoBanco_GarantirQueNaoENulo()
+        {
+            var result = alunoModel.obterAluno(2);
+            Assert.IsNotNull(result);
+        }
+
+
            
     }
 }

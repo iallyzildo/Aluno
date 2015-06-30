@@ -146,6 +146,22 @@ namespace Aluno.Models
 
             return (digito10 + "" + digito11);
         }
+        public int Soma(int valor1, int valor2)
+        {
+            return valor1+valor2;
+        }
+        public int Divisao(int valor1, int valor2)
+        {
+            return valor1/valor2;        
+        }
+        public int Multiplicacao(int valor1, int valor2)
+        {
+            return valor1*valor2;
+        }
+        public int Subtração(int valor1, int valor2)
+        {
+            return valor1-valor2;
+        }
        
     }
 }
