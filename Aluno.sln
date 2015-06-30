@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aluno", "Aluno\Aluno.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aluno.Tests", "Aluno.Tests\Aluno.Tests.csproj", "{34DF6C05-CC38-4C10-A476-FF9DF73A7F95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelasSelenium.Test", "TelasSelenium.Test\TelasSelenium.Test.csproj", "{1207E6BC-130B-4A2B-9BCE-B1A72ED1E466}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{34DF6C05-CC38-4C10-A476-FF9DF73A7F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34DF6C05-CC38-4C10-A476-FF9DF73A7F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34DF6C05-CC38-4C10-A476-FF9DF73A7F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1207E6BC-130B-4A2B-9BCE-B1A72ED1E466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1207E6BC-130B-4A2B-9BCE-B1A72ED1E466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1207E6BC-130B-4A2B-9BCE-B1A72ED1E466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1207E6BC-130B-4A2B-9BCE-B1A72ED1E466}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
