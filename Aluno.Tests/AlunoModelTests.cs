@@ -83,16 +83,16 @@ namespace Aluno.Tests
             Assert.AreEqual(alunoModel.obterAluno(1), result);
         }
         [TestMethod]
-        public void PegarAluno2DoBanco_RetornarNomeCorretoDoAluno2()
+        public void PegarAluno9DoBanco_RetornarNomeCorretoDoAluno9()
         {
-            var result = alunoModel.obterAluno(2);
+            var result = alunoModel.obterAluno(9);
             Assert.IsNotNull(result);
-            Assert.AreEqual(alunoModel.obterAluno(2).Nome, result.Nome);
+            Assert.AreEqual(alunoModel.obterAluno(9).Nome, result.Nome);
         }
         [TestMethod]
-        public void PegarAluno2DoBanco_GarantirQueNaoENulo()
+        public void PegarAluno9DoBanco_GarantirQueNaoENulo()
         {
-            var result = alunoModel.obterAluno(2);
+            var result = alunoModel.obterAluno(9);
             Assert.IsNotNull(result);
         }
 
