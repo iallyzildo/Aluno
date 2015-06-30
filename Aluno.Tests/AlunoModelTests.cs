@@ -94,9 +94,6 @@ namespace Aluno.Tests
         {
             var result = alunoModel.obterAluno(9);
             Assert.IsNotNull(result);
-        }
-
-
-           
+        }      
     }
 }
