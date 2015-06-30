@@ -69,31 +69,31 @@ namespace Aluno.Tests
             var retorno = alunoModel.Multiplicacao(3, 2);
             Assert.AreEqual(esperado, retorno);
         }
-        [TestMethod]
-        public void TestarConexaoNoBanco()
-        {
-            var result = alunoModel.obterAluno(9);
-            Assert.IsNotNull(result);
-        }
+        //[TestMethod]
+        //public void TestarConexaoNoBanco()
+        //{
+        //    var result = alunoModel.obterAluno(9);
+        //    Assert.IsNotNull(result);
+        //}
 
-        [TestMethod]
-        public void PegarAluno1DoBanco_DeverRetornarAluno1()
-        {
-            var result = alunoModel.obterAluno(1);
-            Assert.AreEqual(alunoModel.obterAluno(1), result);
-        }
-        [TestMethod]
-        public void PegarAluno9DoBanco_RetornarNomeCorretoDoAluno9()
-        {
-            var result = alunoModel.obterAluno(9);
-            Assert.IsNotNull(result);
-            Assert.AreEqual(alunoModel.obterAluno(9).Nome, result.Nome);
-        }
-        [TestMethod]
-        public void PegarAluno9DoBanco_GarantirQueNaoENulo()
-        {
-            var result = alunoModel.obterAluno(9);
-            Assert.IsNotNull(result);
-        }      
+        //[TestMethod]
+        //public void PegarAluno1DoBanco_DeverRetornarAluno1()
+        //{
+        //    var result = alunoModel.obterAluno(1);
+        //    Assert.AreEqual(alunoModel.obterAluno(1), result);
+        //}
+        //[TestMethod]
+        //public void PegarAluno9DoBanco_RetornarNomeCorretoDoAluno9()
+        //{
+        //    var result = alunoModel.obterAluno(9);
+        //    Assert.IsNotNull(result);
+        //    Assert.AreEqual(alunoModel.obterAluno(9).Nome, result.Nome);
+        //}
+        //[TestMethod]
+        //public void PegarAluno9DoBanco_GarantirQueNaoENulo()
+        //{
+        //    var result = alunoModel.obterAluno(9);
+        //    Assert.IsNotNull(result);
+        //}      
     }
 }
