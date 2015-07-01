@@ -17,6 +17,13 @@ namespace Aluno.Models
             return lista.ToList();
         }
 
+
+
+
+
+
+
+
         public string adicionarAluno(aluno a)
         {
             string erro = null;
